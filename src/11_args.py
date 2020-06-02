@@ -44,8 +44,8 @@ print(f2(*a))    # Should print 22
 # YOUR CODE HERE
 
 
-def f3(num_1: int, num_2: int = None) -> int:
-    return num_1 + (num_2 if num_2 is not None else 1)
+def f3(num_1: int, num_2: int = 1) -> int:
+    return num_1 + num_2
 
 
 print(f3(1, 2))  # Should print 3
