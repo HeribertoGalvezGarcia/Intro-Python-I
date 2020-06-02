@@ -42,7 +42,7 @@ calendar = TextCalendar()
 
 date = datetime.now()
 
-month = int(sys.argv[1]) if len(args) >= 1 else date.month
-year = int(sys.argv[2]) if len(args) == 2 else date.year
+month = int(args[0]) if len(args) >= 1 else date.month
+year = int(args[1]) if len(args) == 2 else date.year
 
 print(calendar.formatmonth(year, month))
